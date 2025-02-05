@@ -6,27 +6,30 @@ body {
   
   .navbar {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     background-color: #dadde3;
     padding: 10px 0;
   }
   
   .btn {
+    display: flex;
+    justify-items:center;
+    align-items: center;
     background: transparent;
     color: #5f6061;
     border: 10px;
     padding: 10px 20px;
     margin: 0 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
   }
   
-  .nav-btn:hover {
+  .btn:hover {
     color: black;
     background-color: white;
-    transition: 1s ease-in-out;
+    transition: 0.2s ease-in-out;
     
   }
   
@@ -34,18 +37,23 @@ body {
     display: none;
     padding: 20px;
     text-align: center;
-    background: white;
+    background-color: #f9f9f9;
     margin: 20px auto;
     width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+  }
+
+  .btn:focus{
+    background-color: white;
+    color:black;
+
   }
   
   .section.active {
     display: block;
-    color: black;
-    background-color: white;
-    transition: 1s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
   
-  
+  img{
+    border: 5px solid black;
+  }
