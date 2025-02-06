@@ -9,6 +9,8 @@ body {
     justify-content: center;
     background-color: #dadde3;
     padding: 10px 0;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   
   .btn {
